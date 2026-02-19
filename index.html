@@ -17,9 +17,9 @@
                 Shan <span>Pulina</span>
             </div>
             <div class="links">
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#home">Home</a>
                 </div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">Education</a>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#education">Education</a>
                 </div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a
                         href="#">Skills</a></div>
@@ -32,8 +32,8 @@
         <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
         <div class="dropdown">
             <div class="links">
-                <a href="">Home</a>
-                <a href="">About</a>
+                <a href="#home">Home</a>
+                <a href="#education">Education</a>
                 <a href="">Skills</a>
                 <a href="">Service</a>
                 <a href="">Contact</a>
@@ -41,7 +41,7 @@
             </div>
         </div>
     </nav>
-    <section>
+    <section id="home" class="hero-section">
         <div class="main-container">
             <div class="content">
                 <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Shan</span></h1>
@@ -66,7 +66,60 @@
                 </div>
             </div>
             <div class="image" data-aos="zoom-in" data-aos-duration="3000">
-                <img src="portfolioPic.png" alt="">
+                <img src="images/portfolioPic.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education-section">
+        <div class="education-container">
+            <h2 data-aos="fade-up" data-aos-duration="1200">Education</h2>
+            <p class="education-subtitle" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="150">
+                My academic path from school to university.
+            </p>
+
+            <div class="education-grid">
+                <article class="education-card" data-aos="fade-right" data-aos-duration="1200">
+                    <div class="education-logo">
+                        <img src="images\school-logo.jpg" alt="School Logo">
+                    </div>
+                    <div class="education-content">
+                        <h3>School Name</h3>
+                        <p class="education-years">2013 - 2021</p>
+                        <p>
+                            
+                        </p>
+                        <div class="education-social">
+                            <a href="https://www.facebook.com/StThomasMatara" target="_blank" rel="noopener noreferrer" aria-label="School Facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/school/thomians-matara/" target="_blank" rel="noopener noreferrer" aria-label="School LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="education-card" data-aos="fade-left" data-aos-duration="1200">
+                    <div class="education-logo">
+                        <img src="images\university-logo.jpg" alt="University Logo">
+                    </div>
+                    <div class="education-content">
+                        <h3>University Name</h3>
+                        <p class="education-years">2025 - 2027 </p>
+                        <p>
+                            I am pursuing a Higher Diploma at ICET, focusing on improving my academic knowledge and professional skills.
+                        </p>
+                        <div class="education-social">
+                            <a href="https://www.facebook.com/iCETSriLanka" target="_blank" rel="noopener noreferrer" aria-label="University Facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/icetsrilanka/posts/?feedView=all" target="_blank" rel="noopener noreferrer" aria-label="University LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
