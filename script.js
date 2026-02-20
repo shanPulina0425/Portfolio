@@ -7,7 +7,7 @@ function cancel(){
     navbar.style.transform  = "translateY(-500px)"
 }
 
-// for Typewriter effect
+
 
 const texts = [
     "DEVELOPER",
@@ -45,4 +45,43 @@ function eraseText() {
     }
 }
 
-window.onload = typeWriter;
+window.addEventListener("load", typeWriter);
+
+const form = document.getElementById("form");
+
+if (form) {
+    const submitBtn = form.querySelector('button[type="submit"]');
+
+    form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+        formData.append("access_key", "8b9f3a7d-3e9c-4da9-a2c1-90f8129c3286");
+
+        const originalText = submitBtn.textContent;
+
+        submitBtn.textContent = "Sending...";
+        submitBtn.disabled = true;
+
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+                alert("Success! Your message has been sent.");
+                form.reset();
+            } else {
+                alert("Error: " + data.message);
+            }
+        } catch (error) {
+            alert("Something went wrong. Please try again.");
+        } finally {
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+        }
+    });
+}

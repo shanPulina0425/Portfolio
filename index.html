@@ -28,7 +28,7 @@
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a
                         href="#projects">Projects</a></div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a
-                        href="#">Contact</a></div>
+                        href="#contact">Contact</a></div>
             </div>
         </div>
         <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
@@ -38,7 +38,7 @@
                 <a href="#education">Education</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
-                <a href="">Contact</a>
+                <a href="#contact">Contact</a>
                 <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
             </div>
         </div>
@@ -54,12 +54,10 @@
                     Currently focused on improving my programming skills and exploring different technologies.
                     Every day is a new learning opportunity, and I'm excited to grow in this field!</p>
                 <div class="social-links">
-                    <a data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i
+                    <a href="https://www.linkedin.com/in/shan-pulina/" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i
                             class="fa-brands fa-linkedin"></i></a>
-                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i
+                    <a href="https://github.com/shanPulina0425" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i
                             class="fa-brands fa-github"></i></a>
-                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i
-                            class="fa-brands fa-facebook"></i></a>
                     <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i
                             class="fa-brands fa-twitter"></i></a>
                 </div>
@@ -323,6 +321,46 @@
             </div>
         </div>
     </section>
+
+    <footer id="contact" class="contact-footer">
+        <div class="footer-container">
+            <div class="footer-contact-info" data-aos="fade-right" data-aos-duration="1200">
+                <h2>Contact Me</h2>
+                <p>Send me a message and I will get back to you soon.</p>
+                <a class="footer-email" href="mailto:shanpulina24@gmail.com">
+                    <i class="fa-solid fa-envelope"></i> shanpulina24@gmail.com
+                </a>
+                <p class="footer-location">
+                    <i class="fa-solid fa-location-dot"></i> Sri Lanka, Matara
+                </p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/shan-pulina/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/shanPulina0425" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+                <div class="footer-nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#education">Education</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                </div>
+            </div>
+
+            <form id="form" class="footer-form" data-aos="fade-left" data-aos-duration="1200">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Type your message here..." required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <a href="#home" class="back-to-top" aria-label="Back to top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+    </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({ offset: 0, });

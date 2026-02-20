@@ -589,6 +589,185 @@ nav{
     box-shadow: 0 0 12px rgba(128,42,0,0.8);
 }
 
+.contact-footer{
+    width: 100%;
+    padding: 60px 0 40px;
+    background: linear-gradient(135deg, rgb(128,42,0) 0%, rgb(0,13,77) 100%);
+    border-top: 1px solid rgba(255, 214, 182, 0.4);
+    position: relative;
+}
+
+.footer-container{
+    width: min(1100px, 92%);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.footer-contact-info h2{
+    font-size: clamp(1.6rem, 1.1rem + 2vw, 2.3rem);
+    color: rgb(235, 186, 139);
+    text-shadow: 0 0 10px rgba(235, 186, 139, 0.45);
+    margin-bottom: 10px;
+}
+
+.footer-contact-info p{
+    color: #f0dfd1;
+    margin-bottom: 14px;
+    line-height: 1.5;
+}
+
+.footer-email{
+    color: #fff4ea;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(235, 186, 139, 0.8);
+    padding-bottom: 2px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-email:hover{
+    color: rgb(255, 202, 156);
+}
+
+.footer-location{
+    color: #f0dfd1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.footer-social{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.footer-social a{
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    border: 1.4px solid rgba(235, 186, 139, 0.9);
+    color: rgb(255, 225, 198);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.footer-social a:hover{
+    color: rgb(60, 29, 14);
+    background-color: rgb(235, 186, 139);
+    box-shadow: 0 0 12px rgba(235, 186, 139, 0.6);
+}
+
+.footer-nav-links{
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.footer-nav-links a{
+    color: #fff1e5;
+    text-decoration: none;
+    border: 1px solid rgba(235, 186, 139, 0.55);
+    border-radius: 999px;
+    padding: 6px 11px;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.footer-nav-links a:hover{
+    color: rgb(60, 29, 14);
+    background-color: rgb(235, 186, 139);
+}
+
+.footer-form{
+    background: linear-gradient(160deg, rgba(74, 41, 22, 0.68), rgba(39, 21, 12, 0.95));
+    border: 1px solid rgba(235, 186, 139, 0.42);
+    border-radius: 16px;
+    padding: 20px;
+    display: grid;
+    gap: 12px;
+    box-shadow: 0 0 18px rgba(53, 28, 14, 0.35);
+}
+
+.footer-form input,
+.footer-form textarea{
+    width: 100%;
+    background-color: rgba(255, 234, 217, 0.07);
+    border: 1px solid rgba(235, 186, 139, 0.42);
+    color: #fff4ea;
+    border-radius: 8px;
+    padding: 11px 12px;
+    font-size: 0.95rem;
+    outline: none;
+}
+
+.footer-form input::placeholder,
+.footer-form textarea::placeholder{
+    color: #e5cbb7;
+}
+
+.footer-form input:focus,
+.footer-form textarea:focus{
+    border-color: rgb(255, 204, 156);
+    box-shadow: 0 0 0 2px rgba(255, 204, 156, 0.25);
+}
+
+.footer-form button{
+    justify-self: start;
+    background-color: rgb(210, 145, 95);
+    color: rgb(49, 24, 12);
+    border: 1px solid rgb(210, 145, 95);
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.footer-form button:hover{
+    background-color: transparent;
+    color: rgb(255, 218, 183);
+    border-color: rgb(255, 218, 183);
+}
+
+.footer-form button:disabled{
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+.back-to-top{
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    border: 1.5px solid rgb(235, 186, 139);
+    color: rgb(255, 225, 198);
+    background-color: rgba(255, 225, 198, 0.08);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.back-to-top:hover{
+    color: rgb(60, 29, 14);
+    background-color: rgb(235, 186, 139);
+    box-shadow: 0 0 12px rgba(235, 186, 139, 0.8);
+}
+
 
 @media (max-width:884px) {
     nav .logo{
@@ -640,6 +819,10 @@ nav{
     }
 
     .projects-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container{
         grid-template-columns: 1fr;
     }
 }
