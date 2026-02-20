@@ -97,6 +97,7 @@ nav{
 .hero-section{
     width: 100%;
     min-height: 90vh;
+    padding-top: 32px;
 }
 
 .main-container{
