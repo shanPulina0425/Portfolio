@@ -27,6 +27,9 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 1px solid rgba(8, 2, 38, 0.95);
+    border-radius: 12px;
+    padding: 0 3px;
 }
 
 .logo{
@@ -581,7 +584,7 @@ nav{
 .project-links a{
     text-decoration: none;
     color: white;
-    border: 1px solid rgb(128,42,0);
+    border: 1px solid rgba(8, 2, 38, 0.95);
     border-radius: 8px;
     padding: 8px 12px;
     background-color: rgba(128,42,0,0.14);
@@ -601,7 +604,7 @@ nav{
 .contact-footer{
     width: 100%;
     padding: 60px 0 40px;
-    background: linear-gradient(135deg, rgb(128,42,0) 0%, rgb(0,13,77) 100%);
+    background-color: rgb(128,42,0);
     border-top: 1px solid rgba(255, 214, 182, 0.4);
     position: relative;
 }
@@ -661,8 +664,9 @@ nav{
     width: 2.2rem;
     height: 2.2rem;
     border-radius: 50%;
-    border: 1.4px solid rgba(235, 186, 139, 0.9);
+    border: 1.4px solid rgba(8, 2, 38, 0.95);
     color: rgb(255, 225, 198);
+    background-color: rgba(8, 2, 38, 0.95);
     text-decoration: none;
     display: inline-flex;
     align-items: center;
@@ -671,9 +675,9 @@ nav{
 }
 
 .footer-social a:hover{
-    color: rgb(60, 29, 14);
-    background-color: rgb(235, 186, 139);
-    box-shadow: 0 0 12px rgba(235, 186, 139, 0.6);
+    color: rgb(255, 225, 198);
+    background-color: rgba(8, 2, 38, 0.95);
+    box-shadow: 0 0 12px rgba(8, 2, 38, 0.55);
 }
 
 .footer-nav-links{
@@ -686,7 +690,8 @@ nav{
 .footer-nav-links a{
     color: #fff1e5;
     text-decoration: none;
-    border: 1px solid rgba(235, 186, 139, 0.55);
+    border: 1px solid rgba(8, 2, 38, 0.95);
+    background-color: rgba(8, 2, 38, 0.95);
     border-radius: 999px;
     padding: 6px 11px;
     font-size: 0.9rem;
@@ -694,12 +699,12 @@ nav{
 }
 
 .footer-nav-links a:hover{
-    color: rgb(60, 29, 14);
-    background-color: rgb(235, 186, 139);
+    color: #fff1e5;
+    background-color: rgba(8, 2, 38, 0.95);
 }
 
 .footer-form{
-    background: linear-gradient(160deg, rgba(74, 41, 22, 0.68), rgba(39, 21, 12, 0.95));
+    background: rgba(8, 2, 38, 0.95);
     border: 1px solid rgba(235, 186, 139, 0.42);
     border-radius: 16px;
     padding: 20px;
@@ -711,9 +716,9 @@ nav{
 .footer-form input,
 .footer-form textarea{
     width: 100%;
-    background-color: rgba(255, 234, 217, 0.07);
-    border: 1px solid rgba(235, 186, 139, 0.42);
-    color: #fff4ea;
+    background-color: rgb(235, 186, 139);
+    border: 1px solid rgba(255, 214, 182, 0.45);
+    color: rgb(49, 24, 12);
     border-radius: 8px;
     padding: 11px 12px;
     font-size: 0.95rem;
@@ -722,13 +727,13 @@ nav{
 
 .footer-form input::placeholder,
 .footer-form textarea::placeholder{
-    color: #e5cbb7;
+    color: rgba(49, 24, 12, 0.7);
 }
 
 .footer-form input:focus,
 .footer-form textarea:focus{
-    border-color: rgb(255, 204, 156);
-    box-shadow: 0 0 0 2px rgba(255, 204, 156, 0.25);
+    border-color: rgb(255, 214, 182);
+    box-shadow: 0 0 0 2px rgba(255, 214, 182, 0.25);
 }
 
 .footer-form button{
@@ -744,9 +749,9 @@ nav{
 }
 
 .footer-form button:hover{
-    background-color: transparent;
-    color: rgb(255, 218, 183);
-    border-color: rgb(255, 218, 183);
+    background-color: rgba(8, 2, 38, 0.95);
+    color: #fff4ea;
+    border-color: rgba(8, 2, 38, 0.95);
 }
 
 .footer-form button:disabled{
@@ -761,9 +766,9 @@ nav{
     width: 2.8rem;
     height: 2.8rem;
     border-radius: 50%;
-    border: 1.5px solid rgb(235, 186, 139);
+    border: 1.5px solid rgba(8, 2, 38, 0.95);
     color: rgb(255, 225, 198);
-    background-color: rgba(255, 225, 198, 0.08);
+    background-color: rgba(8, 2, 38, 0.95);
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -772,9 +777,9 @@ nav{
 }
 
 .back-to-top:hover{
-    color: rgb(60, 29, 14);
-    background-color: rgb(235, 186, 139);
-    box-shadow: 0 0 12px rgba(235, 186, 139, 0.8);
+    color: rgb(255, 225, 198);
+    background-color: rgba(8, 2, 38, 0.95);
+    box-shadow: 0 0 12px rgba(8, 2, 38, 0.65);
 }
 
 
