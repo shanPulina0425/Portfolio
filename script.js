@@ -1,4 +1,4 @@
-function hamburg() {
+function openMobileMenu() {
     const navbar = document.querySelector(".dropdown");
     if (navbar) {
         navbar.style.transform = "translateY(0px)";
