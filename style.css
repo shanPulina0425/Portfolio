@@ -202,6 +202,7 @@ nav{
     overflow: hidden;
     box-shadow: 0 0 70px rgb(0,13,77);
     flex-shrink: 0;
+    transition: transform 0.28s ease, box-shadow 0.28s ease, filter 0.28s ease;
 }
 
 .main-container .image img{
@@ -212,7 +213,9 @@ nav{
 }
 
 .main-container .image:hover{
-    animation: animate 1.5s ease-in-out infinite;
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 0 90px rgba(0,13,77,0.95);
+    filter: saturate(1.08);
 }
 
 @keyframes animate {
